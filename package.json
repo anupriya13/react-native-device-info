@@ -136,6 +136,9 @@
     ]
   },
   "codegenConfig": {
+    "name": "RNDeviceInfoCPPSpec",
+    "type": "modules",
+    "jsSrcsDir": "./src",
     "windows": {
       "namespace": "RNDeviceInfoCPPCodegen",
       "outputDirectory": "windows/RNDeviceInfoCPP/codegen",
