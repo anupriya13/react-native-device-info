@@ -134,5 +134,19 @@
       "module",
       "typescript"
     ]
+  },
+  "codegenConfig": {
+    "windows": {
+      "namespace": "RNDeviceInfoCPPCodegen",
+      "outputDirectory": "windows/RNDeviceInfoCPP/codegen",
+      "separateDataTypes": true
+    }
+  },
+  "react-native-windows": {
+    "init-windows": {
+      "name": "RNDeviceInfoCPP",
+      "namespace": "RNDeviceInfoCPP",
+      "template": "cpp-lib"
+    }
   }
 }
