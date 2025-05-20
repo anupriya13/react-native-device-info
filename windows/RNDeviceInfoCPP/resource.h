@@ -1,5 +1,5 @@
 //
 // Microsoft Visual C++ generated include file.
-// Used by RNDeviceInfoCPP.rc
+// Used by RNDeviceInfoCpp.rc
 
 #pragma once

@@ -1,4 +1,4 @@
-namespace RNDeviceInfoCPP
+namespace RNDeviceInfoCpp
 {
   [webhosthidden]
   [default_interface]

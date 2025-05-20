@@ -3,29 +3,26 @@
 #include "pch.h"
 #include "resource.h"
 
-#if __has_include("codegen/NativeRnDeviceInfoCppDataTypes.g.h")
-  #include "codegen/NativeRnDeviceInfoCppDataTypes.g.h"
+#if __has_include("codegen/NativeRNDeviceInfoCppDataTypes.g.h")
+  #include "codegen/NativeRNDeviceInfoCppDataTypes.g.h"
 #endif
-#include "codegen/NativeRnDeviceInfoCppSpec.g.h"
+#include "codegen/NativeRNDeviceInfoCppSpec.g.h"
 
 #include "NativeModules.h"
 
-namespace winrt::RNDeviceInfoCPP
+namespace winrt::RNDeviceInfoCpp
 {
 
-REACT_MODULE(RnDeviceInfoCpp)
-struct RnDeviceInfoCpp
+REACT_MODULE(RNDeviceInfoCpp)
+struct RNDeviceInfoCpp
 {
-  using ModuleSpec = RNDeviceInfoCPPCodegen::RnDeviceInfoCppSpec;
+  using ModuleSpec = RNDeviceInfoCppCodegen::RNDeviceInfoCppSpec;
 
   REACT_INIT(Initialize)
   void Initialize(React::ReactContext const &reactContext) noexcept;
-
-  REACT_SYNC_METHOD(multiply)
-  double multiply(double a, double b) noexcept;
 
 private:
   React::ReactContext m_context;
 };
 
-} // namespace winrt::RNDeviceInfoCPP
+} // namespace winrt::RNDeviceInfoCpp

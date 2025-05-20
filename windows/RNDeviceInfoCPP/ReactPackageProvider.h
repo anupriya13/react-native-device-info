@@ -4,7 +4,7 @@
 
 using namespace winrt::Microsoft::ReactNative;
 
-namespace winrt::RNDeviceInfoCPP::implementation
+namespace winrt::RNDeviceInfoCpp::implementation
 {
 
 struct ReactPackageProvider : ReactPackageProviderT<ReactPackageProvider>
@@ -14,11 +14,11 @@ struct ReactPackageProvider : ReactPackageProviderT<ReactPackageProvider>
   void CreatePackage(IReactPackageBuilder const &packageBuilder) noexcept;
 };
 
-} // namespace winrt::RNDeviceInfoCPP::implementation
+} // namespace winrt::RNDeviceInfoCpp::implementation
 
-namespace winrt::RNDeviceInfoCPP::factory_implementation
+namespace winrt::RNDeviceInfoCpp::factory_implementation
 {
 
 struct ReactPackageProvider : ReactPackageProviderT<ReactPackageProvider, implementation::ReactPackageProvider> {};
 
-} // namespace winrt::RNDeviceInfoCPP::factory_implementation
+} // namespace winrt::RNDeviceInfoCpp::factory_implementation

@@ -1,18 +1,14 @@
 #include "pch.h"
 
-#include "RNDeviceInfoCPP.h"
+#include "RNDeviceInfoCpp.h"
 
-namespace winrt::RNDeviceInfoCPP
+namespace winrt::RNDeviceInfoCpp
 {
 
 // See https://microsoft.github.io/react-native-windows/docs/native-modules for details on writing native modules
 
-void RnDeviceInfoCpp::Initialize(React::ReactContext const &reactContext) noexcept {
+void RNDeviceInfoCpp::Initialize(React::ReactContext const &reactContext) noexcept {
   m_context = reactContext;
 }
 
-double RnDeviceInfoCpp::multiply(double a, double b) noexcept {
-  return a * b;
-}
-
-} // namespace winrt::RNDeviceInfoCPP
+} // namespace winrt::RNDeviceInfoCpp
